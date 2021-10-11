@@ -1,24 +1,19 @@
-<head>
-	<title> Segment Test </title>
-	<script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
-  analytics.load("8O7kE7wMZnOhMAAvPJOLmUI4ILSb4OJV");
-  analytics.page();
-  }}();
-</script>
+<html>
+ <head>
+     <script type="text/javascript">
+     window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
+     heap.load("86613427");
+     </script>
+ </head>
+ <body>
+   <h1>Hello World<h1>
+       <form id="testSubmit">
+         <label for="fname">First name:</label><br>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="lname">Last name:</label><br>
+         <input type="text" id="lname" name="lname">
+         <input type="submit" id="submitBtn">
+       </form>
+ </body>
+</html>
 
-</head>
-<body>
-	<script>analytics.reset()</script>
-	<script>analytics.identify("testUser2")</script>
-	<form id="testSubmit">
-	  <label for="fname">First name:</label><br>
-	  <input type="text" id="fname" name="fname"><br>
-	  <label for="lname">Last name:</label><br>
-	  <input type="text" id="lname" name="lname">
-	  <input type="submit" id="submitBtn">
-	</form>
-
-	<button>Click on me!</button>
-
-</body>
