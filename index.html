@@ -1,9 +1,3 @@
-.banner {
- background-image:
-url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F140306182602-sri-lanka-tea-ceylon-tea-trails.jpg");
- color: white;
-}
-
 <html>
  <head>
   <title>Test Site</title>
@@ -13,10 +7,14 @@ url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/
      </script>
  </head>
  <body>
-  <div class = 'banner'>
    <h1>Hello World</h1>
-  </div>
-    <p>Please submit the details</p>
+    <nav>
+     <p><a href="#">Home</a></p>
+     <p><a href="#form">Form</a></p>
+     <p><a href="#info">Info</a></p>
+    </nav>
+  <div id='form'>
+   <h2>Please Submit the Form</h2>
        <form id="testSubmit">
          <label for="fname">First name:</label><br>
          <input type="text" id="fname" name="fname"><br>
@@ -24,30 +22,13 @@ url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/
          <input type="text" id="lname" name="lname">
          <input type="submit" id="submitBtn">
        </form>
-    <div class="w3-container">
-         <p>A car is a wheeled, self-powered motor vehicle used for transportation. Most definitions of the term specify that cars are designed to run primarily on roads. (Wikipedia)</p>
-       </div>
-       <div id="signUpForm signUpActive" class="red active hs4232858">
-           <a href="/signup.html" id="signUpLink" class=".cta-link" data-redirect="false">
-               <span id="signUpLink" class="cta-text">Sign Up Now!
-           </a>
-       </div>
-        <div id="zorp" class="purple">
-    <span class="green yellow" cta-header="Welcome!">
-        Welcome!
-    </span>
-    <a href="/welcome.html" data-welcome="You are really welcome" class="welcome blorp">
-        Please join us!
-    </a>
-</div>
-        <div class="blue container" id="mainContainer">
-    <span class="choices" data-choice="unselected">
-        <ul id="choices" class="blue">
-            <li class="choice">First</li>
-            <li class="choice">Second</li>
-            <li class="choice">Third</li>
-        </ul>
-    </span>
+  </div>
+    <div id='info'>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+     </ul>
 </div>
  </body>
 </html>
